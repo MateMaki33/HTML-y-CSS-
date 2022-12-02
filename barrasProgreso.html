@@ -1,0 +1,189 @@
+<div class="meters scrollear" id="meterdiv">
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            HTML
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="vacio" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            CSS
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="vacio" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            JS
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="vacio" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            PHP
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="vacio" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number">
+            JAVA
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="vacio" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+  </div>
+
+<!---------------------------------------------------CSS------------------------------------------------------------------------------->
+
+.meters {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  height: auto;
+}
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin-left: 50px;
+}
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 215, 0, 0.5),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number {
+  font-weight: 600px;
+  color: rgb(251, 249, 249);
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.html-progress {
+  animation: anim 2s linear forwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+.css-progress {
+  animation: animcss 2s linear forwards;
+}
+@keyframes animcss {
+  100% {
+    stroke-dashoffset: 170;
+  }
+}
+.php-progress {
+  animation: animphp 2s linear forwards;
+}
+@keyframes animphp {
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+.js-progress {
+  animation: animjs 2s linear forwards;
+}
+@keyframes animjs {
+  100% {
+    stroke-dashoffset: 230;
+  }
+}
+.java-progress {
+  animation: animjava 2s linear forwards;
+}
+@keyframes animjava {
+  100% {
+    stroke-dashoffset: 180;
+  }
+}
